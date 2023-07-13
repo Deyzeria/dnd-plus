@@ -3,7 +3,7 @@
   "title": "DnD Plus",
   "version": "1.0.0",
   "compatibility": {
-    "minimum": "11",
+    "minimum": "10",
     "verified": "11"
   },
   "relationships": {
@@ -33,6 +33,9 @@
       "discord": "@sinantrarion",
       "flags": {}
     }
+  ],
+  "scripts": [
+    "/dnd-plus.js"
   ],
   "packs": [
     {
