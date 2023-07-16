@@ -141,7 +141,7 @@ Hooks.once('setup', function () {
 
     CONFIG.DND5E.rangeTypes['awakr'] = 'Attack';
     CONFIG.DND5E.rangeTypes['mwakr'] = 'Melee Weapon';
-    CONFIG.DND5E.rangeTypes['rwakr'] = 'Ranged Weapon';  
+    CONFIG.DND5E.rangeTypes['rwakr'] = 'Ranged Weapon';
 });
 
 Hooks.on('ready', () => {
@@ -152,6 +152,8 @@ Hooks.on('ready', () => {
 Hooks.once("init", () => {
     DnDPlusSetup.AddFlags();
     DnDPlusSetup.AddACCalculationTypes();
+    CONFIG.DND5E.featureTypes.class.subtypes['martialprowess'] = "Martial Prowess";
+
 });
 
 
