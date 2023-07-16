@@ -88,5 +88,6 @@
     }
   ],
   "manifest": "https://raw.githubusercontent.com/Sinantrarion/dnd-plus/master/module.json",
-  "url": "https://github.com/Sinantrarion/dnd-plus"
+  "url": "https://github.com/Sinantrarion/dnd-plus",
+  "download": "https://github.com/Sinantrarion/dnd-plus/archive/refs/heads/main.zip"
 }
