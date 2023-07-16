@@ -6,7 +6,6 @@
     "minimum": "10",
     "verified": "11"
   },
-  "manifest": "https://raw.githubusercontent.com/Sinantrarion/dnd-plus/master/module.json",
   "relationships": {
     "requires": [
       {
@@ -87,5 +86,7 @@
       "system": "dnd5e",
       "flags": {}
     }
-  ]
+  ],
+  "manifest": "https://raw.githubusercontent.com/Sinantrarion/dnd-plus/master/module.json",
+  "url": "https://github.com/Sinantrarion/dnd-plus"
 }
