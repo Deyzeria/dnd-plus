@@ -130,18 +130,6 @@ class DnDPlusSetup
 }
 
 Hooks.once('setup', function () {
-    CONFIG.DND5E.abilityActivationTypes['free'] = 'Free Action';
-    CONFIG.DND5E.abilityActivationTypes['attack'] = 'Attack';
-
-    CONFIG.DND5E.spellSchools['zerozeal'] = '0 Zeal';
-    CONFIG.DND5E.spellSchools['onezeal'] = '1 Zeal';
-    CONFIG.DND5E.spellSchools['twozeal'] = '2 Zeal';
-    CONFIG.DND5E.spellSchools['threezeal'] = '3 Zeal';
-    CONFIG.DND5E.spellSchools['fourzeal'] = '4 Zeal';   
-
-    CONFIG.DND5E.rangeTypes['awakr'] = 'Attack';
-    CONFIG.DND5E.rangeTypes['mwakr'] = 'Melee Weapon';
-    CONFIG.DND5E.rangeTypes['rwakr'] = 'Ranged Weapon';
 });
 
 Hooks.on('ready', () => {
@@ -154,6 +142,18 @@ Hooks.once("init", () => {
     DnDPlusSetup.AddACCalculationTypes();
     CONFIG.DND5E.featureTypes.class.subtypes['martialprowess'] = "Martial Prowess";
 
+    CONFIG.DND5E.abilityActivationTypes['free'] = 'Free Action';
+    CONFIG.DND5E.abilityActivationTypes['attack'] = 'Attack';
+
+    CONFIG.DND5E.spellSchools['zerozeal'] = '0 Zeal';
+    CONFIG.DND5E.spellSchools['onezeal'] = '1 Zeal';
+    CONFIG.DND5E.spellSchools['twozeal'] = '2 Zeal';
+    CONFIG.DND5E.spellSchools['threezeal'] = '3 Zeal';
+    CONFIG.DND5E.spellSchools['fourzeal'] = '4 Zeal';
+
+    CONFIG.DND5E.rangeTypes['awakr'] = 'Attack';
+    CONFIG.DND5E.rangeTypes['mwakr'] = 'Melee Weapon';
+    CONFIG.DND5E.rangeTypes['rwakr'] = 'Ranged Weapon';
 });
 
 
