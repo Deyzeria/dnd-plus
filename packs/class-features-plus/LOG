@@ -1,3 +1,5 @@
-2023/07/16-16:38:49.989 30f8 Recovering log #49
-2023/07/16-16:38:49.996 30f8 Delete type=0 #49
-2023/07/16-16:38:49.996 30f8 Delete type=3 #48
+2023/07/19-22:19:35.986 ca8 Recovering log #53
+2023/07/19-22:19:35.986 ca8 Level-0 table #55: started
+2023/07/19-22:19:35.990 ca8 Level-0 table #55: 48708 bytes OK
+2023/07/19-22:19:35.994 ca8 Delete type=0 #53
+2023/07/19-22:19:35.994 ca8 Delete type=3 #52
