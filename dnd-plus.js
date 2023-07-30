@@ -118,13 +118,13 @@ class DnDPlusSetup
             type: String,
             placeholder: "@abilities.str.mod"}
         CONFIG.DND5E.characterFlags['physcritrange'] = {
-            name: "Decrease Crit Range By This Amount", 
+            name: "Physical Crit", 
             hint: "Automatic- Put here the number that the Attack crit range should be decreased by. 0 for crit range of 20. Call it with @dnd5e.flags.physcritrange", 
             section: "Damage Dies",
             type: Number,
             placeholder: "0"}
         CONFIG.DND5E.characterFlags['spellcritrange'] = {
-            name: "Decrease Crit Range By This Amount", 
+            name: "Spell Crit", 
             hint: "Automatic- Put here the number that the Spell crit range should be decreased by. 0 for crit range of 20. Call it with @dnd5e.flags.spellcritrange", 
             section: "Damage Dies",
             type: Number,
@@ -148,6 +148,7 @@ Hooks.once('setup', function () {
 Hooks.on('ready', () => {
     DnDPlusSetup.AddWeaponProperties();
     DnDPlusSetup.AddWeapons();
+    DnDPlusSetup.AddArmors();
 });
 
 Hooks.once("init", () => {
