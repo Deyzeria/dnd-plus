@@ -13,7 +13,9 @@ class DnDPlusSetup
         CONFIG.DND5E.weaponProperties['precision'] = 'Precision';
         CONFIG.DND5E.weaponProperties['swift'] = 'Swift';
         CONFIG.DND5E.weaponProperties['trip'] = 'Trip';
+    }
 
+    static async AddWeaponMasteries(){
         CONFIG.DND5E.weaponProperties['crush'] = "Crush";
         CONFIG.DND5E.weaponProperties['efficient'] = "Efficient",
         CONFIG.DND5E.weaponProperties['exploit'] = "Exploit";
@@ -117,18 +119,6 @@ class DnDPlusSetup
             section: "Damage Dies",
             type: String,
             placeholder: "@abilities.str.mod"}
-        CONFIG.DND5E.characterFlags['physcritrange'] = {
-            name: "Physical Crit", 
-            hint: "Automatic- Put here the number that the Attack crit range should be decreased by. 0 for crit range of 20. Call it with @dnd5e.flags.physcritrange", 
-            section: "Damage Dies",
-            type: Number,
-            placeholder: "0"}
-        CONFIG.DND5E.characterFlags['spellcritrange'] = {
-            name: "Spell Crit", 
-            hint: "Automatic- Put here the number that the Spell crit range should be decreased by. 0 for crit range of 20. Call it with @dnd5e.flags.spellcritrange", 
-            section: "Damage Dies",
-            type: Number,
-            placeholder: "0"}
     }
 
     static async AddACCalculationTypes(){
@@ -143,12 +133,10 @@ class DnDPlusSetup
 }
 
 Hooks.once('setup', function () {
+    DnDPlusSetup.AddWeaponMasteries();
 });
 
 Hooks.on('ready', () => {
-    DnDPlusSetup.AddWeaponProperties();
-    DnDPlusSetup.AddWeapons();
-    DnDPlusSetup.AddArmors();
 });
 
 Hooks.once("init", () => {
@@ -168,6 +156,10 @@ Hooks.once("init", () => {
     CONFIG.DND5E.rangeTypes['awakr'] = 'Attack';
     CONFIG.DND5E.rangeTypes['mwakr'] = 'Melee Weapon';
     CONFIG.DND5E.rangeTypes['rwakr'] = 'Ranged Weapon';
+
+    DnDPlusSetup.AddWeaponProperties();
+    DnDPlusSetup.AddWeapons();
+    DnDPlusSetup.AddArmors();
 });
 
 
