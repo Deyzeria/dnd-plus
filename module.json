@@ -1,7 +1,7 @@
 {
   "id": "dnd-plus",
   "title": "DnD Plus",
-  "version": "1.7.5",
+  "version": "1.7.8",
   "compatibility": {
     "minimum": "10",
     "verified": "11"
