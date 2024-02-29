@@ -1,7 +1,7 @@
 {
   "id": "dnd-plus",
-  "title": "DnD Plus",
-  "version": "1.7.8",
+  "title": "Deyzeria's DnD Plus",
+  "version": "2.0.0",
   "compatibility": {
     "minimum": "10",
     "verified": "11"
@@ -34,8 +34,8 @@
   },
   "authors": [
     {
-      "name": "Sinantrarion",
-      "discord": "@sinantrarion",
+      "name": "Deyzeria",
+      "discord": "deyzeria",
       "flags": {}
     }
   ],
@@ -92,7 +92,7 @@
       "flags": {}
     }
   ],
-  "manifest": "https://raw.githubusercontent.com/Sinantrarion/dnd-plus/master/module.json",
-  "url": "https://github.com/Sinantrarion/dnd-plus",
-  "download": "https://github.com/Sinantrarion/dnd-plus/archive/refs/heads/main.zip"
+  "manifest": "https://raw.githubusercontent.com/Deyzeria/dnd-plus/master/module.json",
+  "url": "https://github.com/Deyzeria/dnd-plus",
+  "download": "https://github.com/Deyzeria/dnd-plus/archive/refs/heads/main.zip"
 }
